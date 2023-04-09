@@ -3,16 +3,16 @@ import type { DefaultThemeOptions } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 
 export default defineUserConfig({
-  title: "vuepress-theme-reco",
-  description: "Just playing around",
+  title: "sugarの博客",
+  description: "玩玩儿",
   theme: recoTheme({
     style: "@vuepress-reco/style-default",
     logo: "/logo.png",
-    author: "reco_luan",
+    author: "sugar",
     authorAvatar: "/head.png",
-    docsRepo: "https://github.com/vuepress-reco/vuepress-theme-reco-next",
+    docsRepo: "https://github.com/hustlyt/my-blog",
     docsBranch: "main",
-    docsDir: "example",
+    docsDir: "",
     lastUpdatedText: "",
     // series 为原 sidebar
     series: {
@@ -28,18 +28,18 @@ export default defineUserConfig({
       ],
     },
     navbar: [
-      { text: "Home", link: "/" },
-      { text: "Categories", link: "/categories/reco/1/" },
-      { text: "Tags", link: "/tags/tag1/1/" },
+      { text: "主页", link: "/" },
+      { text: "分类", link: "/categories/reco/1/" },
+      { text: "标签", link: "/tags/tag1/1/" },
       {
-        text: "Docs",
+        text: "文档",
         children: [
           { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
           { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
         ],
       },
     ],
-    bulletin: {
+    /*bulletin: {
       body: [
         {
           type: "text",
@@ -92,7 +92,7 @@ export default defineUserConfig({
           ],
         },
       ],
-    },
+    },*/
     // valineConfig 配置与 1.x 一致
     // valineConfig: {
     //   appId: 'xxx',
